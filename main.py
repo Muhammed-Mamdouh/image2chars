@@ -37,7 +37,7 @@ if __name__ == "__main__":
     main_photo_path = args.photo
     k = 1
     factor = 3.5
-    max_width = int(args.width)
+    max_width = int(args.width or 0) or 200
     output_file_path = main_photo_path.split('.')[0] + ".txt"
 
     img = make_image(main_photo_path, tree, k, factor, max_width, chars)
