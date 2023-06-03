@@ -7,7 +7,7 @@ This is a Python command-line tool that converts a given image into a grid of ch
 1. Clone this repository to your local machine:
 
 ```sh
-git clone https://github.com/your_username/image-to-chars-generator.git
+git clone https://github.com/Muhammed-Mamdouh/image2chars.git
 ```
 2. Install the required packages using pip:
 ```sh
