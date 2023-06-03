@@ -1,32 +1,39 @@
-# image2chars Generator
+# Image to Characters Generator
 
-This is a command-line tool that converts an image into ASCII art using characters from a pre-defined set. The tool works by dividing the image into tiles and replacing each tile with a character that has a similar brightness value.
+This is a Python command-line tool that converts a given image into a grid of characters that resembles the image. The tool works by dividing the image into tiles and replacing each tile with a character that has a similar brightness value.
 
-# Installation
-Clone this repository to your local machine:
+## Installation
 
-git clone https://github.com/your_username/ascii-art-generator.git
-Install the required packages using pip:
+1. Clone this repository to your local machine:
 
+```sh
+git clone https://github.com/your_username/image-to-chars-generator.git
+```
+2. Install the required packages using pip:
+```sh
 pip install -r requirements.txt
-Usage
-The tool can be run from the command line using the following syntax:
+```
+# Usage
+To use the tool, run the generate.py script from the command line, with the following arguments:
 
 
-python main.py --photo <path_to_image> --size <tile_size> --chars <character_set>
+
+```sh
+python generate.py --photo <path_to_input_image>  --size <size_of_each_tile> --chars <set_of_characters>
+```
 where:
 
-<path_to_image> is the path to the input image file
+- <path_to_input_image> is the path to the input image file
+- <size_of_each_tile> is the size of each tile in pixels (eg: 5, the smaller the higher the resolution and the bigger the output)
+- <set_of_characters> is the set of characters to use for the output (default: a pre-defined set of ASCII characters)
 
-<tile_size> is the size of each tile in characters (default: 10)
-
-<character_set> is the set of characters to use for the ASCII art (default: all printable ASCII characters)
-
-The output image will be saved to a file with the same name as the input image, but with the extension changed to ".txt".
+## The output text file will contain a grid of characters that resembles the input image.
 
 # Example
-To convert an image named "my_photo.jpg" using a tile size of 8 and a character set of "01", run the following command:
+To convert an image named "my_photo.jpg" using a tile size of 8 and a character set of "01", and save the output to a file named "my_output.txt", run the following command:
 
+```sh
+python main.py --photo my_photo.jpg --size 5 --chars MANDO.
+```
 
-python main.py --photo my_photo.jpg --size 8 --chars 01
-The output will be saved to a file named "my_photo.txt".
+The output should be find in the same directory as the input photo as a txt file
