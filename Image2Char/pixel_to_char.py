@@ -1,4 +1,4 @@
-from image_processing import *
+from Image2Char.image_processing import *
 import random
 import numpy as np
 from PIL import Image

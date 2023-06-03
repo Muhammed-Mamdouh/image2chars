@@ -1,6 +1,6 @@
 import argparse
-from character_tree import *
-from pixel_to_char import *
+from Image2Char.character_tree import make_char_tree, get_chars
+from Image2Char.pixel_to_char import make_image, save_image, show_image
 import os
 import pickle
 
