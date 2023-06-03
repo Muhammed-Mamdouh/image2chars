@@ -17,8 +17,11 @@ python main.py --photo <path_to_image> --size <tile_size> --chars <character_set
 where:
 
 <path_to_image> is the path to the input image file
+
 <tile_size> is the size of each tile in characters (default: 10)
+
 <character_set> is the set of characters to use for the ASCII art (default: all printable ASCII characters)
+
 The output image will be saved to a file with the same name as the input image, but with the extension changed to ".txt".
 
 # Example
