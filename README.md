@@ -19,12 +19,12 @@ To use the tool, run the generate.py script from the command line, with the foll
 
 
 ```sh
-python generate.py --photo <path_to_input_image>  --size <size_of_each_tile> --chars <set_of_characters>
+python generate.py --photo <path_to_input_image>  --width <line_width> --chars <set_of_characters>
 ```
 where:
 
 - <path_to_input_image> is the path to the input image file
-- <size_of_each_tile> is the size of each tile in pixels (eg: 5, the smaller the higher the resolution and the bigger the output)
+- <line_width> is the width of the output  (eg: 150, the number of the chracters in 1 line)
 - <set_of_characters> is the set of characters to use for the output (default: a pre-defined set of ASCII characters)
 
 ## The output text file will contain a grid of characters that resembles the input image.
@@ -33,7 +33,7 @@ where:
 To convert an image named "my_photo.jpg" using a tile size of 8 and a character set of "01", and save the output to a file named "my_output.txt", run the following command:
 
 ```sh
-python main.py --photo my_photo.jpg --size 5 --chars MANDO.
+python main.py --photo my_photo.jpg --width 200 --chars MANDO.
 ```
 
 The output should be find in the same directory as the input photo as a txt file
