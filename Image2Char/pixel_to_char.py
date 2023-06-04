@@ -6,7 +6,7 @@ from PIL import Image
 
 def pxl2chr(pixel, tree, chars):
     # Given a pixel, find the index of the closest character in the `chars` array
-    closest = tree.query([pixel])[1]
+    _, closest_k = tree.query([pixel])
     return chars[closest]
 
 
